@@ -1,7 +1,7 @@
 import { ref } from 'vue'
 import { defineStore } from 'pinia'
 
-const API_URL = (import.meta.env.VITE_API_URL || 'http://localhost:8090') + '/tasks';
+const API_URL = (import.meta.env.VITE_API_URL || 'https://taskbuddy-api-8d58.onrender.com') + '/tasks';
 
 export const useTasksStore = defineStore('tasks', () => {
     const tasks = ref([])

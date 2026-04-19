@@ -14,7 +14,11 @@ import java.util.Optional;
 
 @RequiredArgsConstructor
 @RestController
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = {
+    "http://localhost:5173",
+    "https://taskbuddy-git-main-ishimwemoses-projects.vercel.app",
+    "https://taskbuddy.vercel.app"
+})
 @RequestMapping("/tasks")
 public class TaskController {
 
